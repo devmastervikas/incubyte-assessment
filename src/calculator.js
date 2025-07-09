@@ -8,9 +8,7 @@
  */
 function add(numbers) {
   if (numbers === "") return 0;
-  if (!numbers.includes(",")) return parseInt(numbers, 10);
-
-  const values = numbers.split(",").map(Number);
+  const values = numbers.split(/,|\n/).map(Number);
   return values.reduce((sum, val) => sum + val, 0);
 }
 
