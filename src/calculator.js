@@ -16,7 +16,16 @@ function add(numbers) {
     numbers = parts[1];
   }
 
-  const values = numbers.split(delimiter).map(Number);
+  const values = numbers
+    .split(delimiter)
+    .map(Number)
+    .filter((n) => !isNaN(n));
+
+  const negatives = values.filter((n) => n < 0);
+  if (negatives.length > 0) {
+    throw new Error(`negative numbers not allowed ${negatives.join(",")}`);
+  }
+
   return values.reduce((sum, val) => sum + val, 0);
 }
 
