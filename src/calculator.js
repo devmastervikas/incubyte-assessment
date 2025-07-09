@@ -8,10 +8,9 @@
 function add(numbers) {
   if (numbers === "") return 0;
   if (!numbers.includes(",")) return parseInt(numbers, 10);
-  return numbers
-    .split(",")
-    .map(Number)
-    .reduce((a, b) => a + b, 0);
+
+  const values = numbers.split(",").map(Number);
+  return values.reduce((sum, val) => sum + val, 0);
 }
 
 module.exports = { add };
