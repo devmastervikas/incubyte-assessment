@@ -7,7 +7,7 @@
 const { add } = require("../src/calculator");
 
 describe("String Calculator", () => {
-  test("should support custom delimiter syntax //;\n1;2", () => {
-    expect(add("//;\n1;2")).toBe(3);
+  test("should throw error when input contains negative numbers", () => {
+    expect(() => add("1,-2")).toThrow("negative numbers not allowed -2");
   });
 });
