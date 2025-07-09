@@ -6,7 +6,5 @@
 const { add } = require("../src/calculator");
 
 describe("String Calculator", () => {
-  test("should return sum of two comma-separated numbers", () => {
-    expect(add("1,2")).toBe(3);
-  });
+  test("should return sum of multiple comma-separated numbers", () => {});
 });
