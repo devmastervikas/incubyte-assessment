@@ -1,0 +1,14 @@
+{
+  "name": "string-calculator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "Vikas Singh",
+  "description": "String Calculator Kata (TDD)",
+  "devDependencies": {
+    "jest": "^30.0.4"
+  }
+}
