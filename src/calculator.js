@@ -3,7 +3,7 @@
  * Date: 2025-07-09
  * Adds numbers provided in a string, separated by delimiters.
  * Returns 0 for an empty string.
- * @param {string} numbers - String containing numbers to add.
+ * @param {string} numbers - String containing, delimiter and numbers to add.
  * @returns {number} Sum of the numbers.
  */
 function add(numbers) {
